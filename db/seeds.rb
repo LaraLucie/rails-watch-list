@@ -18,3 +18,7 @@ puts 'Start'
   })
 end
 puts 'End'
+
+List.create({
+  name: 'List1'
+})
