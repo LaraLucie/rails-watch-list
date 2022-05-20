@@ -4,6 +4,10 @@
 
 <ul>
   <% @lists.each do |list| %>
-  <li><%= list.name %></li>
+    <%= link_to list_path(list) do %>
+      <li><%= list.name %></li>
+    <% end %>
   <% end %>
 </ul>
+
+<%= link_to "Create a movie list", new_list_path %>
